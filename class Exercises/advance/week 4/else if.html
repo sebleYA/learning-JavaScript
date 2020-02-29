@@ -1,0 +1,37 @@
+<!-- DOCTYPE HTML-->
+<!-- This is the HTML comments-->
+<!-- create JavaScript function:checkValue-->
+<!-- use selection statment if...else if...else-->
+<html>
+<head>
+<title> selection statment</title>
+    <script language="JavaScript">
+    //  creat checkValue() function
+    function checkValue(){
+        // creat the varaible to store user input
+        var number=document.theForm.elements[0].value;//access the 1st element value on the form
+        // use seletion statment to display the result according to user input
+        if (number > 0){
+            alert("Positive number");// this line outputs to the web page with an alert box
+        }else if(number<0) {
+            alert("Negative number");
+        }else if(number==0) {
+        alert("You entered 0");
+        }else{
+            alert("Not a number")
+        }
+}
+    </script>
+</head>
+<body>
+    <form name="theForm">
+    <h2> JavaScript selection statment</h2>
+    Please enter a number, and I will tell you wheather is positive of negative:
+    <div><br></div>
+    <input type="text"><br>
+    <div></div><br>
+    <input type="button" value="Submit" onclick="checkValue()">
+    
+    </form>
+</body>
+</html>

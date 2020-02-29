@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- use drop down box for breakfast menu selection-->
+<!-- create one button input field with submit value and onclick function-->
+<!--create variabe: var food to store selected options-->
+<!-- on submit, call the function show()-->
+<!-- use getElementById to gather user input-->
+<!-- use .innerHTML to display out put on the web page-->
+<!-- also use alert box to display output -->
+<!-- use if... else if selection statement-->
+<html>
+    <head>
+        <title> Assignemt 4</title>
+    </head>
+    <h1> Breakfast Menu </h1>
+    <p> Please select an option for breakfast in the drop down list:</p>
+    <body>
+        <form>
+            <select name="Breakfast menu" id="menu" onchange="show()">
+                <option value="Apple"> Apple</option>
+                <option value="Eggs"> Eggs</option>
+                <option value="Banana"> Banana</option>
+                <option value="Greek Yogurt"> Greek Yogurt</option>
+                <option value="Kiwi"selected> Kiwi</option>
+                <option value="Milk"> Milk</option>
+                <option value="none of these"> none of these</option>
+            </select>
+            <input type="button" value="Submit" onclick="show()">
+        </form>
+        <p id="demo"></p>
+        <script language="JavaScript">
+            //create the function show()
+            function show(){
+                //create variable food
+            var food=document.getElementById("menu").value;// retrives the first element
+            if((food=="Apple")||(food=="Banana")||(food=="Kiwi")){
+                alert(food+" is the healthy fruit.");// out put will be displayed on pop up box
+                document.getElementById("demo").innerHTML=food+" is the healthy fruit.";// out put will be displayed on the form web page
+            }else if(food=="Eggs"){
+                alert(food+" are undeniably healthy and delicious.");
+                document.getElementById("demo").innerHTML=food+" are undeniably healthy and delicious.";
+            }else if((food=="Greek Yogurt")||(food=="Milk")){
+                alert(food+" is the dairy product.");
+                document.getElementById("demo").innerHTML=food+" is the dairy product.";
+            }else{
+                alert("You selected "+food+".");
+                document.getElementById("demo").innerHTML="You selected "+food+".";
+            }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title> JavaScript Comparison</title>
+    <script language="JavaScript">
+        function checkValue(){
+            var number=document.theForm.elements[0].value
+            if(number > 0){
+                alert("Positive number")
+            }else if(number < 0){
+                alert("Negative number!")
+            }else if(number==0){
+                alert("You entered zero!")
+            }else{
+                alert("Not a number!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="theForm">
+        <h2> JavaScript Statement</h2>
+        Enter your number, and i will tell you wheather it's positive or negative: 
+        <input type="text">
+        <input type="button" value="Enter" onclick="checkValue()">
+    </form>
+</body>
+</html>

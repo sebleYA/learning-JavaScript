@@ -1,0 +1,36 @@
+<!-- JavaScript: Using the Form-->
+<!-- HTML form is in the <body> section-->
+<!-- The script is in the <head> section -->
+<!-- creat 3 text input field and 1 button-->
+<!-- creat 3 variables in JavaScript  -->
+<!-- The form gathers users input with a JavaScript and a button-->
+<!-- On submit, the button calls a JavaScript function: Show()-->
+<!-- The outputs occur as an alert-->
+<html>
+<head>
+    <title>Assignment1</title>
+      <script language="JavaScript">
+        //creat a function show()
+      function show() {
+        // creat variables to store users input
+        var firstName = document.theForm.elements[0].value; // access the 1st element value on the form
+        var lastName = document.theForm.elements[1].value; // access the 2nd element value on the form
+        var ID = document.theForm.elements[2].value; // access the 3rd element value on the form
+        alert(// output will be displayed in popups box.
+          "First Name: " + firstName + " Last name: " + lastName + " ID: " + ID ); // outputs to the web page with an alert box
+        alert(firstName +" " +lastName +" thanks for submitting your information!!"); // outputs to the web page with an alert box
+      }
+      </script>
+</head>
+<body>
+    <form name="theForm">
+      What's your First Name
+      <input type="text" name="firstName" value="Mickey" /><br />
+      What's your Last Name
+      <input type="text" name="lastName" value="Mouse" /><br />
+      What's your ID
+      <input type="text" name="ID" value="1234567" /><br />
+      <input type="button" value="Submit Information" onclick="show()" />
+    </form>
+</body>
+</html>

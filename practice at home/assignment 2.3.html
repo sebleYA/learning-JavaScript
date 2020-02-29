@@ -1,0 +1,33 @@
+<!--DOCTYPE html-->
+<html>
+    <head>
+        <title> Assignment 2</title>
+        <script language="JavaScript">
+            function checkValue(){
+                var score=document.theForm.elements[0].value 
+                if( score>100){
+                    alert( score + " is an invalid input.");
+                }else if( score>=90){
+                    alert("Your score is A. " + " It's.." + score);
+                    alert("Congratulation! "+ "Great work!");
+                }else if( score>=80){
+                    alert("Your score is B. " + " It's.." + score);
+                }else if( score>=70){
+                    alert("Your score is C. " + "It's.."+ score);
+                }else if( score>=60){
+                    alert("Your score is D. " + "It's.." + score);
+                }else{
+                    alert("Your score is F. " + "It's.." + score)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="theForm">
+            Please put your score, and I will show your letter grade 
+            <input type="text">
+            <input type="button" value="Submit" onclick="checkValue()">
+
+        </form>
+    </body>
+</html>

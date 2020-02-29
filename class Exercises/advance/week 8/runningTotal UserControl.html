@@ -1,0 +1,31 @@
+<!--DOCTYPE html-->
+<!-- use iteration/repetition/looping statement-->
+<html>
+    <head>
+        <title> do/while loop Statement</title>
+    </head>
+    <body>
+        <h1> Running total example</h1>
+        <h1> Allow user to contol the days of sales amount to be entered</h1>
+        <h1> To calculate a total of number days sales amount</h1>
+        <script lauangue="JavaScript">
+            //declare the variable to hold how many days
+            var day=parseInt(prompt("Please enter number of days you want to enter the sales amount"))
+            alert("Please provide the sales amount for each day to calculate total sales");
+            // declare counter variable for the days
+            var count=1
+            // declare accumulator variable, use it to hold the calculated sales amount
+            var totalSales=0;
+
+            do{
+                //declare another variable sales to hold user input
+                var sales=parseInt(prompt(" Enter the sales for day "+ count));
+                totalSales=totalSales+sales;
+                count++; //count=count+1; increment the count by 1
+            }while(count<=day)
+
+            // display the total sales amount
+            document.write(" The total sales for " + day +" days is $"+ totalSales);
+        </script>
+    </body>
+</html>

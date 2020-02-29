@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- this is the HTML comment-->
+<!-- use parseInt () funcition-->
+<html>
+    <title> Logical operators</title>
+<body>
+    <script language="JavaScript">
+        //declare a variavle to hold user input
+        var age= parseInt(prompt("Enter your age",""));
+        //displau user input on screen
+        alert("the age you entered is"+ age);
+        if(age>=0 && age<=10){
+            document.write(age+ "age is between 0 and 10<br>");
+        }
+        if (!(age>=0 && age<=10)){
+            document.write(age+ " age is not between o and 10<br>")
+        }
+        if(age>=80 || age<=10){
+            document.write(age+ "age is 80 or above or 10 or below<br>")
+        }
+        if((age>=30 && age<=39) || (age>=80 && age<=80)){
+            document.write(age+ " age is between 30 and 39 or age is between 80 and 89")
+        }
+    </script>
+</body>
+
+</html>

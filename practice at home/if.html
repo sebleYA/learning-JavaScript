@@ -1,0 +1,34 @@
+<!--DOCTYPE HTML-->
+<!-- The script is in the <head> section-->
+<!--Creat variable password to store users input-->
+<!--Creat a function: checkValue to display the output-->
+<!--Using selection statement: if....-->
+<!-- the form gathers user input with the text fiel and button-->
+<!-- The form in the <body> section-->
+<!-- creat one input field and one button-->
+<!-- onclick, calls the fuction: checkValue -->
+<!-- the output will be displayed in alret popup box-->
+<html>
+    <head>
+        <title> JavaScript Comparsion</title>
+        <script language="JavaScript">
+        // creat a function
+            function checkValue(){
+            var password=document.theForm.elements[0].value // access the first elelment from the form
+                if(password=="Hello"){// true
+                alert("Congragulation! It's correct.")// display the output in a alret box
+            }
+            
+        }
+        </script>
+    </head>
+<body>
+    <form name="theForm">
+        <h2> JavaScript Comparsion</h2>
+        What is the Password?
+        <input type="text" value="Enter your password"><br>
+        <input type="button" value="Enter" onclick="checkValue()">
+
+    </form>
+</body>
+</html>

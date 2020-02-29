@@ -1,0 +1,33 @@
+<!-- DOCTYPE HTML-->
+<!-- use select statment to display drop down list-->
+<!-- use document.getElementById to select user input-->
+<html>
+<head>
+    <title> Using Select statment</title>
+</head>
+<body>
+    <p id="demo "> </p>
+
+    <form>
+        <select name="cars" id="car">
+            <option value="volvo"> Volovo</option>
+            <option value="toyoya"> Toyota</option>
+            <option value="honda"> Honda</option>
+            <option value="audi" selected> Audi</option>
+            <option value="none of these"> None of thess</option>
+        </select>
+        <input type="button" value="Submit" onclick="show()">
+    </form>
+    <script language="JavaScript">
+        function show(){
+            var carName=document.getElementById("car").value;
+            alert("You selected car is "+carName)
+            //document.write("You selected car is "+ carName)
+        
+            document.getElementById("demo").innerHTML=carName+" is your selected car."
+
+        }
+    </script>
+</body>
+
+</html>

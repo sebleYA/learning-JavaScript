@@ -1,0 +1,41 @@
+<!--DOCTYPE html-->
+<!--this is the HTML comment-->
+<!-- use the method: toUpperCase()-->
+<!-- use switch statemnet in selection-->
+<html>
+    <head>
+        <title> Switch Statemnt3 </title>
+    </head>
+    <body>
+    <h2> Switch Statement Execrise</h2>
+        <script language="JavaScript">
+            // declare a variable animal to store user input
+            var animal=prompt("Enter an animal");
+            alert("The animal you enter is "+ animal);// display user input tp user 
+            //declare another variable to store the upppercase value
+            var animalU=animal.toUpperCase();
+
+            //use switch statement
+            switch(animalU){
+             case "DOG":
+                 alert("House Pets");
+                 document.write("Dog is a house pet.");
+                 break;
+            case "PIG":
+                alert("Farm animals");
+                document.write("Pig is a farm animal.");
+                break;
+            case "LION":
+                alert("Oh! No!");
+                document.write("Oh NO! Don't come near.")
+                break;
+            default:
+                alert("It's not in our catagory.")
+                document.write("It's not in out catagory.")
+            }
+
+
+
+        </script>
+    </body>
+</html>

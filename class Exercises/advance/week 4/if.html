@@ -1,0 +1,30 @@
+<!-- This time, HTML form is in the<body>-->
+<!-- gather user password and check with the password set in the program-->
+<!-- creat 1 text click input field, 1 button-->
+<!-- when user click the button, call the checkValue() function-->
+<!-- use the selection statment if...-->
+<html>
+<head>
+<title> JavaScript selection statment</title>
+    <script language="JavaScript">
+    //  creat a function checkValue()
+    function checkValue(){
+        // creat the varaible to hold the user input
+        var passWord=document.theForm.elements[0].value;//access the 1st element value on the form
+        // use if...else
+        if (passWord=="Hello"){
+            //true
+    alert("Congragulation! Your Password is correct. It's... " + passWord + "!!");// this line outputs to the web page with an alert box
+    }
+    }
+    </script>
+</head>
+<body>
+    <form name="theForm">
+    <h2> JavaScripts selection statment</h2>
+    What is the Password?
+    <input type="text" value="Enter your Password">
+    <input type="button" value="Submit" onclick="checkValue()">
+    </form>
+</body>
+</html>

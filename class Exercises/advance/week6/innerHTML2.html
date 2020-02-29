@@ -1,0 +1,60 @@
+<!--DOCTYPE HTML-->
+<!-- develope the drop down list box-->
+<!-- use document.getelelmentById to retrive user select in drop down selection-->
+<!-- use selection statment to determine the output to the user-->
+<!-- use onchange even attribute in the select element-->
+<!--use innerHTML diplay-->
+<!-- the form is in the <body> section-->
+<!-- use select attribute to select-->
+<!-- using select element to produce drop down list box-->
+<html>
+    <head>
+        <title> using the select element</title>
+    </head>
+    <body>
+        <h1> The select element to produce the drop down list box</h1>
+        <p id="demo"></p>
+        <form>
+            <select name="Cars" id="car" onchange="show()">
+                <option value="volvo"> Volovo</option>
+                <option value="toyota"> Toyoya</option>
+                <option value="honda" selected> Honda</option>
+                <option value="audi"> Audi</option>
+                <option value="none of these"> None of these</option>
+            </select>
+            <input type="button" value="submit" onclick="show()">
+        </form>
+
+        <script language="JavaScript">
+          //create the funtion show()
+          function show(){
+              //declare the variabe to store user selection
+              var carName=document.getElementById("car").value;
+              //confirm with the user for the selection
+              alert("You selected "+ carName+".")
+              
+              // use selection statment to provide more information regarding that brand
+              if((carName=="toyota")||(carName=="honda")){
+                  alert(carName+ " is a Japanese car.");
+                  /*
+                  the documnet.write() will erase all the reloaded HTML page. 
+                  document.write(carName+" is a Japanese car.");*/
+                  document.getElementById("demo").innerHTML=carName+" is a Japanese car.";
+              } else if(carName=="volvo"){
+                  alert(carName + " was original a Swedish car.");
+                  document.getElementById("demo").innerHTML=carName+" was original a Swedish car.";
+
+              } else if(carName=="audi"){
+                  alert(carName + " is a German car.");
+                  document.getElementById("demo").innerHTML=carName+" is a German car.";
+
+              } else{
+                  alert("You selected "+ carName+".");
+                  document.getElementById("demo").innerHTML="Yor selected "+ carName;
+
+              }
+          }
+        </script>  
+    </body>
+</html>
+

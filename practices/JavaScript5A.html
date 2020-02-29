@@ -1,0 +1,32 @@
+<!--DOCTYPE html-->
+<!--This is HTML comments-->
+<!-- use text input field-->
+<html>
+  <head>
+    <title> Text input</title>
+  </head>
+
+  <body>
+    <form name="myForm">
+      First Name:<br>
+      <input type="text" name="firstName" value="Mickey" ><br>
+      Last Name:<br>
+      <input type="text" name="LastName" value="Mouse"><br>
+      <input type="button" value="submit" onclick="reavle()">
+
+      <script language="JavaScript">
+        function reavle(){
+          var magic=document.myForm.elements[0].value
+          var magic1=document.myForm.elements[1].value
+		  alert("It's " + magic + " " + magic1 )
+		  alert("Thank you, see you later!!!")
+
+        }
+      </script>
+
+    </form>
+
+<p>Note that the form itself is not visible.</p>
+<p> Also note that the default width of the text input is 20 chars.</p>
+  </body>
+</html>

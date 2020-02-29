@@ -1,0 +1,25 @@
+<!-- JavaScript5: Using a form - No Popups-->
+<!-- This time, a HTML form is in the <body>-->
+    <!-- The form gathers user input with a textfield and a button-->
+    <!-- On submit, the button calls a JavaScript function: reveal()-->
+    <!-- The variable "magic" is used as in JavaScript 4-->
+<!-- This time, the JavaScript is placed in the <head> section-->        
+<!-- Also, this time output occurs as an alert-->    
+<html>
+        <head>
+                <title> JavaScript Test 5</title>
+            <script language="JavaScript">
+            function reveal(){
+                var magic= document.theForm.elements[0].value
+alert("It's ... " + "!!")    
+} 
+            </script>
+            </head>
+            <body>
+                <form name="theForm">
+                    What's the magic word?
+                    <input type="text">
+                    <input type="button" value="submit" onclick="reveal()">
+                </form>
+            </body>
+        </html>

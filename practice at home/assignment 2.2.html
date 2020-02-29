@@ -1,0 +1,44 @@
+<!--DOCTYPE html-->
+<!-- The form gather user input using the textfield input-->
+<!-- The Javascript is in the <head> section-->
+<!-- one test input and one button -->
+<!-- Creat a JavaScript funciton: checkValue-->
+<!-- On submit: the JavaScript calls the funtion: checkValue-->
+<!-- The variable: score is used to store the input-->
+<!--THe output is displayed on an alert box-->
+<!-- The form is the <body> section-->
+<!--The statement selection is: if..else if..else if..else if..else if...else if-->
+<html>
+  <head>
+    <title>Assigment 2</title>
+    <script language="JavaScript">
+      // creat a fuction:checkValue 
+      function checkValue() {
+        // creat a variable to store inputs
+        var score = document.theForm.elements[0].value;// access the 1st element in the form
+       // creat statement selection: if...else if to display the result according to users input
+        if (score>=0 && score < 60) {
+          alert("Your grade is F. " + "it's... " + score);// out put is displayed on alert box
+        } else if (score>= 60 && score<=69) {
+          alert("Your grade is D." + " it's.. " + score);
+        } else if (score>= 70 && score<=79) {
+          alert("Your grade is C." + " it's.. " + score);
+        } else if (score>= 80 && score<=89) {
+          alert("Your score is B." + " it's.. " + score);
+        } else if (score>= 90 && score<=100) {
+          alert("Your score is A." + " it's.. " + score);
+          alert("Congradulation! Great work!");
+        } else  {
+          alert(score + " is an invalid input.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="theForm">
+      Please enter your score, and I will show you the letter grade:
+      <input type="text" />
+      <input type="button" value="Sumbit" onclick="checkValue()">
+    </form>
+  </body>
+</html>

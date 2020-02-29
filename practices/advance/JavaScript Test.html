@@ -1,0 +1,30 @@
+<!--JavaScript: Using a Form-->
+<!-- This time, HTML form is in the<body>-->
+<!-- The Form gathers user input with a textfield and a button-->
+<!-- On submit, the button calls a JavaScript funtion:revea()-->
+<!-- The variable "magic" is used as in JavaScript-->
+<!-- This time, the JavaScript is placed in the <head> section-->
+<!-- Also, this time output occurs as an alert()-->
+<html>
+<head>
+    <title> JavaScript Test</title>
+<script language="JavaScript">
+/* creat a function 
+to use in the script tag
+*/
+function reveal(){
+var magic=document.theForm.elements[0].value;//access the 1st element value on the form
+var magic1=document.theForm.elements[1].value;//access the 2nd element value on the form
+alert("It's..." + magic + " ! ");// this line outputs to the web page with an alert box
+alert("It's..." +magic+ " and "+ magic1+ "!!");// this line outputs to the web page with an alert box
+}
+</script>
+</head>
+<body>
+<form name="theForm">
+    What is the magic word?
+    <input type="text" value="Enter your magic word">
+    <input type="button" value="Submit" onclick="reveal()">
+</form>
+</body>
+</html>

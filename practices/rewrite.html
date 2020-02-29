@@ -1,0 +1,24 @@
+<!--DOCTYPE html-->
+<!-- This the html comments-->
+<html>
+    <head>
+        <title> Interactive form</title>
+        <script language="JavaScript">
+            function reveal(){
+            var magic=document.theForm.elements[0].value;// 1st element
+            var magic1=document.theForm.elements[1].value;// 2nd elelment
+        alert("It's ..." + magic + "!!")
+		alert("It's...." + magic + "  "+ magic1 )
+            }
+        </script>
+        </head>
+  
+    <body>
+<form name="theForm">
+    What is the magic word?
+    <input type="text"><br>
+    <input type="button" value="submit" onclick="reveal()">
+</form>
+    </body>
+</html>
+

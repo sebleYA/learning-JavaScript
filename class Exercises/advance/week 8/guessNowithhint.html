@@ -1,0 +1,31 @@
+<!--DOCTYPE html-->
+<!-- use iteration(repetition/loop strcture)-->
+<!-- guessing number game-->
+<html>
+    <head>
+        <title> Guess Number</title>
+    </head>
+    <body>
+        <h1> Guess the number. Guess 1-10 with hint</h1>
+        <script language="JavaScript">
+            alert("Guess the number, guess 1-10");
+            //declare the variable to hold my secret answer
+            var answer=3
+            //using do while loop
+            do{
+                //declare another to hold user guess number
+                var guess=parseInt(prompt("What is your guess?",""));
+                //confirm the user guess
+                alert("Your guess is "+ guess) ;
+                if(answer== guess){
+                    alert("You guessed correctly!");
+                }else if(guess>answer){
+                    alert("The guess is wrong. Please try again.Try a smaller number.");
+                }else{// guess<answer
+                    alert("The guess is wrong. Please try again. Try a bigger number.")
+                }
+            }while(guess!=answer)
+
+        </script>
+    </body>
+</html>

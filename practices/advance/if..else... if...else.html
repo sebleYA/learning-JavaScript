@@ -1,0 +1,48 @@
+<!-- DOCTYPE HTML-->
+<!-- This is the HTML comments-->
+<!-- create JavaScript function:checkValue-->
+<!-- create 2 varaiables:number and place to input the user-->
+<!-- use selection statment if...else if...else-->
+<html>
+<head>
+<title> selection statment</title>
+    <script language="JavaScript">
+    //  creat checkValue() function
+    function checkValue(){
+        // creat the varaible to store user input
+        var number=document.theForm.elements[0].value;//access the 1st element value on the form
+        // use seletion statment to display the result according to user input
+        if (number > 0){
+            alert("Positive number");// this line outputs to the web page with an alert box
+        }else if(number<0) {
+            alert("Negative number");
+        }else if(number==0) {
+        alert("You entered 0");
+        }
+        // use another selection statement to show the medal
+        var place=document.theForm.elements[1].value;// access 2nd element
+        if(place==1){
+            alert('You win the Gold medal!!');
+        }else if(place==2){
+            alert("Your win the Silver medal");
+        }else if(place==3){
+            alert("You win the Bronze medal");
+        }else{
+            alert("No medal. Try again next time")
+        }
+}
+    </script>
+</head>
+<body>
+    <form name="theForm">
+    <h2> JavaScript selection statment</h2>
+    Please enter a number, and I will tell you wheather is positive of negative:
+    <input type="text"><br>
+    please enter your place, and I will tell you the color of the medal:<br>
+    <input type="text"><br>
+    
+    <input type="button" value="Submit" onclick="checkValue()">
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!--DOCTYPE HTML-->
+<!--using the toLowerCase()-->
+<!--creating a drop-down list box-->
+<!--create button text field-->
+<!-- creat two variables to store user inputs-->
+<!-- use switch...case statement-->
+<!-- output is on alert box and alos on the web page-->
+<!-- use select element attribute-->
+<!-- use option value text field to store for the select option-->
+<!-- the JavaScript is on the <body> section-->
+<!-- using the form to display the drop down box-->
+<html>
+    <head>
+        <title> Assignment 3</title>
+        <h1> Switch Statement</h1>
+    </head>
+    <body>
+        <script language="JavaScript">
+            //create a variable to store user input
+            var animal=prompt("Enter animal")
+            alert("The animal you entered is "+ animal)// output displays on alert box
+            //create another variable to store lowercase
+            var animalL=animal.toLowerCase()// stores the user input after case conversion
+            alert("The animal you entered after case conversion is "+ animalL)
+         //use switch statment   
+        switch(animalL){
+            case "dog":
+                alert(" Dog is a house pet.");
+                document.write("Dog is a house pet.");
+                break;
+            case "pig":
+                alert("Pig is a farm animal.");
+                document.write("Pig is a farm animal.");
+                break
+            case "lion": 
+                alert("Oh! NO! Don't come near!");
+                document.write("Oh! No! Don't come near!");
+                break
+            default:
+                alert("It's not in our catagory.");
+                document.write("It's not in our catagory.");
+        }
+        </script>
+        
+        <form>
+            <h1> List for picking animals</h1>
+            Choose an animal: <select name="Choose an animal:">
+                <option value="dog">Dog</option>
+                <option value="pig"> Pig</option>
+                <option value="lion"> Lion</option>
+                <option value="cow" selected> Cow</option>
+                <option value="other animal"> Other animals</option>
+            </select>
+            <input type="button" value="sumbit">
+        </form>
+    </body>
+</html>
