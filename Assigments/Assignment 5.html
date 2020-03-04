@@ -5,25 +5,30 @@
 <!-- using do while iteration/repetetion/loop -->
 <!-- using document.write () to display the output-->
 <html>
-    <head>
-        <title> Assignment 5</title>
-        <body>
-            <h1> Assignment 5</h1>
-            <h1> This is the result of 12 times table</h1>
-            <script language="JavaScript">
-               
-               var number=parseInt (prompt("Please enter the number"));// display pop up box for users 
-                var count=1
-                var totalProduct=0// accumulator
-               do{
-                   totalProduct= number * count;
-                   document.write(number +"*"+ count+ "=" + totalProduct +"<br>")// displays the output on the web page
-                   count++// increament the count by one
+  <head>
+    <title>Assignment 5</title>
+    <body>
+      <h1>Assignment 5</h1>
+      <h1>This is the result of n times table</h1>
+      <script language="JavaScript">
+        // display pop up box for users
 
-               }while(count<=12)
-               
-                
-            </script>
-        </body>
-    </head>
+        var number;
+        // Checking if users are only putting Integer numbers
+        while (!Number.isInteger(parseInt(number))) {
+          number = prompt("Please enter the number");
+        }
+
+        var count = 1;
+        var totalProduct = 0; // accumulator
+        do {
+          totalProduct = parseInt(number) * count;
+          document.write(
+            parseInt(number) + " * " + count + " = " + totalProduct + "<br>"
+          ); // displays the output on the web page
+          count++; // increament the count by one
+        } while (count <= 12);
+      </script>
+    </body>
+  </head>
 </html>
