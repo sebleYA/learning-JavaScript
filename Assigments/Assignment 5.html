@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<!--create variable number to store users input-->
+<!-- Using ParseInt() function to change users input into integer--->
+<!-- create variable count and accumulator variable totalProduct -->
+<!-- using do while iteration/repetetion/loop -->
+<!-- using document.write () to display the output-->
 <html>
     <head>
         <title> Assignment 5</title>
@@ -5,15 +11,18 @@
             <h1> Assignment 5</h1>
             <h1> This is the result of 12 times table</h1>
             <script language="JavaScript">
-                var number=12
+               
+               var number=parseInt (prompt("Please enter the number"));// display pop up box for users 
                 var count=1
-                var totalProduct= 12*count
-          
-                //var product=number*count
-                do{
-                document.write(number+"*"+count+"="+totalProduct +"<br>")
-                count++
-                }while(count<=12)
+                var totalProduct=0// accumulator
+               do{
+                   totalProduct= number * count;
+                   document.write(number +"*"+ count+ "=" + totalProduct +"<br>")// displays the output on the web page
+                   count++// increament the count by one
+
+               }while(count<=12)
+               
+                
             </script>
         </body>
     </head>
