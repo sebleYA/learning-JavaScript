@@ -18,7 +18,9 @@
             do{
                 //declare another variable sales to hold user input
                 var sales=prompt(" Enter the sales for day "+ count+" or enter END to end the process");
-                if(sales.toUpperCase() !="END"){;
+                console.log(sales);
+                
+                if(sales.toUpperCase()!="END"){;
                     totalSales=totalSales+parseInt(sales);
                     count++; //count=count+1; increment the count by 1
                 }else{

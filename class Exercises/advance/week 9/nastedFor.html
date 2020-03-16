@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- This is to use the repetiotion structure-->
+<html>
+    <head>
+        <title> Nested for loop</title>
+    </head>
+    <body>
+        <h1>use the times to demostarte the nasted For loop</h1>
+        <script language="JavaScript">
+        var hcount =0; // count how many hours
+        var mcount= 0; // count how many mins
+        var scount= 0;// count how many secs
+
+         for (var hours=1; hours<=24; hours++){     
+                document.write("Hour is " + hours +"<br>")
+                hcount++
+                for ( var mins=1; mins<=60; mins++){
+                document.write(".... minutes is " + mins +"<br>")
+                mcount++
+                    for (var sec=1; sec<=60; sec++){
+                    document.write("....... second is " + sec +"<br>")
+                    scount++
+                    }
+                }
+            }  
+            document.write(" Total hours is "+ hcount+ "<br>") 
+            document.write(" Total hours is "+ mcount+ "<br>") 
+            document.write(" Total hours is "+ scount+ "<br>") 
+
+        </script>
+    </body>
+</html>

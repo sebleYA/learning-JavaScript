@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Using iteration/looping structure-->
+<!-- Using the sentinetl value to control users input value-->
+<!-- create var count and totalscore -->
+<!-- using var finish to store boolean expression-->
+<!-- using prompt() function to gather user input-->
+<!-- using if/else selection statment-->
+<!-- using do/while looping structure-->
+<!-- using alert() to gather users input -->
+<!-- document.write() to display the out put-->
+<html>
+  <head>
+    <title>Using Sentinel value</title>
+  </head>
+  <body>
+    <h1>Sentinel value to control the number of student test score</h1>
+    <h1>
+      To calculate the total score of all students and the average test score
+      for the class
+    </h1>
+    <script langage="JavaScript">
+      var count = 1; //create variable and assigne 0
+      var totalscore = 0; // accumulator
+      alert("Please provide the test score for each student to calculate the average test score for the class");
+      var finish = false; // Boolean experession
+
+      do {
+        var score = prompt("Enter student " +count +" test score or enter -1 to end the process "); // gather user input
+        if (score != -1) {
+          totalscore = totalscore + parseInt(score);
+          var average = totalscore / count;
+          count++;
+        } else finish = true;
+      } while (!finish);
+      document.write("The total test score is " + totalscore + "<br>");
+      document.write("The average test score for the class is " + average);
+    </script>
+  </body>
+</html>

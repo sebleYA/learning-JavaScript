@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Assignment 6</title>
+    </head>
+    <body>
+        <h1> Sentinel value to control the number of student test score </h1>
+        <h1> To calculate the total score of all students and the average test score for the class</h1>
+        <script langage="JavaScript">
+            var count=1
+            var totalscore=0
+            alert("Please provide the test score for each student to calculate the average test score for the class")
+            var finish=false
+
+            do{
+                var score=prompt("Enter student "+ count+" test score or enter -1 to end the process ")
+                if(score!=-1){
+                totalscore=totalscore+parseInt(score)
+                var average=totalscore/count
+                count++
+                }else
+                   finish=true 
+                
+            }while(!finish)
+            document.write("The total test score is "+ totalscore+"<br>")
+            document.write("The average test score for the class is "+ average)
+
+        </script>
+    </body>
+</html>

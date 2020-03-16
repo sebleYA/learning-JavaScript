@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            
+            function getSum(){
+                var num= Number(document.theForm.elements[0].value)
+                var num1=Number(document.theForm.elements[1].value)
+                totalsum=num+num1
+                document.getElementById("demo").innerHTML=totalsum
+
+            }
+            function getDifference(){
+                var num= parseFloat(document.theForm.elements[0].value)
+                var num1=parseFloat(document.theForm.elements[1].value)
+                if(num>num1){
+                    totalsum=parseFloat(num-num1)
+                    totalsum1=totalsum.toFixed(2)
+                }else if(num<num1){
+                    totalsum=parseFloat(num1-num)
+                    totalsum1=totalsum.toFixed(2)
+
+                }
+                //totalsum=Math.abs(totalsum)
+                document.getElementById("demo").innerHTML=totalsum1
+
+
+            }
+
+        </script>
+        <form name="theForm"> 
+            Enter a number in each box.<br>
+            Number 1
+            <input type="text"><br>
+            Number 2
+            <input type="text"><br>
+            <input type="button" value="Sum:" onclick="getSum()" >
+            <input type="button" value="Difference:" onclick="getDifference()">
+
+        </form>
+        <p id ="demo"></p>
+
+    </body>
+</html>
